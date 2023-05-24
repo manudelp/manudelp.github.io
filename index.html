@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Manuel Delpino</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="bg"></div>
+        <div class="loader"></div>
+    </div>
+    
+    <header class="header">
+        <div class="bg">
+            <div class="bg-color"></div>
+            <picture>
+                <source src="assets/img/bg.avif" type="image/avif">
+                <source src="assets/img/bg.webp" type="image/webp">
+                <img loading="lazy" src="assets//img/bg.jpg" alt="background">
+            </picture>
+        </div>
+        <div class="header__info animate__animated animate__fadeIn">
+            <img class="animate__animated animate__zoomIn" src="assets/img/profile.jpg" alt="Profile">
+            <h1 class="animate__jackInTheBox">- Manuel Delpino -</h1>
+            <h4>Computer Engineering Student</h4>
+            <h4><span>HTML5</span> // <span>CSS3</span> // <span>JS</span></h4>
+        </div>
+        <div class="header__social animate__animated animate__fadeIn">
+            <a href="https://twitter.com/manudelp1"><img src="assets/svg/icons8-twitter.svg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/manudlpn/"><img src="assets/svg/icons8-instagram.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/manuel-delpino/"><img src="assets/svg/icons8-linkedin.svg" alt="LinkedIn"></a>
+        </div>
+
+        <a href="#main" class="scroll-down animate__animated animate__backInUp">
+            <img src="assets/svg/icons8-chevron-down-50.png" alt="scroll-down">
+        </a>
+
+    </header>
+
+    <main id="main">
+        <div class="contenedor">
+            <h2 style="text-align: center; margin-bottom: 4rem;">About Me</h2>
+            <div class="about-me">
+                <div data-aos="fade-right" class="about-me__info">
+                    <h3>Information</h3>
+                    <div class="info__table">
+                        <div>
+                            <p>Full Name</p>
+                            <p>Manuel Oscar Delpino</p>
+                        </div>
+                        <div>
+                            <p>E-mail</p>
+                            <p>manudlpn0@gmail.com</p>
+                        </div>
+                        <div>
+                            <p>Phone</p>
+                            <p>+54 9 11 2498-4397</p>
+                        </div>
+                        <div>
+                            <p>Website</p>
+                            <p><a style="color: var(--color1);" href="https://manueldelpino.netlify.app">manueldelpino.netlify.app</a></p>
+                        </div>
+                        <div>
+                            <p>Address</p>
+                            <p>Pilar, Buenos Aires.<br>1629</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="about-me__desc">
+                    <h3>Hey there!</h3>
+                    <p style="margin-top: 4rem;">Let me introduce myself, I am Manuel Delpino, a Computer Engineering student with experience in Front End design. Since I started my career, I have dedicated my time and effort to delve into the field of computer science and to acquire specialized skills that allow me to excel in my area.
+                    <br> <br>
+                    In my academic trajectory, I have taken various courses focused on Front End design, which has allowed me to develop skills in creating highly attractive and functional user interfaces. I am passionate about the creative process involved in design and always strive to find innovative solutions that combine aesthetics and efficiency.
+                    <br> <br>
+                    In my portfolio, you will find a sample of my work and skills in Front End design. I hope you enjoy my work as much as I enjoy creating it, and that you can see in it the dedication and effort I put into each project.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="skills">
+        <h2 style="text-align: center; margin-bottom: 4rem;">Skills</h2>
+
+        <div class="skills__info container" data-aos="fade-down">
+            <div class="skill">
+                <img src="assets/svg/icons8-html-5.svg" alt="HTML5">
+                <h3 class="skill__title">HTML5</h3>
+            </div>
+            <div class="skill">
+                <img src="assets/svg/icons8-css3.svg" alt="CSS3">
+                <h3 class="skill__title">CSS3</h3>
+            </div>
+            <div class="skill">
+                <img src="assets/svg/icons8-javascript.svg" alt="JS">
+                <h3 class="skill__title">JavaScript</h3>
+            </div>
+            <div class="skill">
+                <img src="assets/svg/icons8-c++.svg" alt="C">
+                <h3 class="skill__title">C Standard</h3>
+            </div>
+            <div class="skill">
+                <img src="assets/svg/icons8-python.svg" alt="Python">
+                <h3 class="skill__title">Python</h3>
+            </div>
+        </div>
+
+        <script>
+            const skills = document.querySelectorAll('.skill');
+
+            skills.forEach(skill => {
+            skill.addEventListener('mouseover', () => {
+                skill.querySelector('.skill__title').classList.add('animated', 'bounceIn');
+            });
+
+            skill.addEventListener('mouseout', () => {
+                skill.querySelector('.skill__title').classList.remove('animated', 'bounceIn');
+            });
+            });
+
+
+            const skillDetails = document.querySelector('.skill_details');
+
+            skills.forEach((skill, index) => {
+            skill.addEventListener('click', () => {
+                // Remove active class from all carousel items
+                document.querySelectorAll('.carousel-item').forEach(item => {
+                item.classList.remove('active');
+                });
+                
+                // Add active class to clicked carousel item
+                document.querySelectorAll('.carousel-item')[index].classList.add('active');
+
+                // Show the skill details section
+                skillDetails.style.display = 'block';
+            });
+            });
+
+            // Hide the skill details section when the user clicks outside of it
+            document.addEventListener('click', event => {
+            if (!event.target.closest('.skill_details') && skillDetails.style.display === 'block') {
+                skillDetails.style.display = 'none';
+            }
+            });
+
+        </script>
+
+        <div class="skill_details">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="detail">
+                            <img src="assets/svg/icons8-html-5.svg" alt="HTML5">
+                            <div>
+                                <h3>HTML5</h3>
+                                <p>With HTML5, I have the ability to structure and organize web content in a semantic and accessible way. This includes knowledge of HTML tags, attributes, and best practices for creating web pages that are both user-friendly and search engine optimized.</p>
+                            </div>
+                        </div>
+                    </div> <!-- carousel-item -->
+                    <div class="carousel-item">
+                        <div class="detail">
+                            <img src="assets/svg/icons8-css3.svg" alt="CSS">
+                            <div>
+                                <h3>CSS3</h3>
+                                <p>I am proficient in CSS3, which allows me to add style, layout, and visual design to web pages. This includes knowledge of CSS properties, selectors, and techniques for creating responsive and mobile-friendly websites.</p>
+                            </div>
+                        </div>
+                    </div> <!-- carousel-item -->
+                    <div class="carousel-item">
+                        <div class="detail">
+                            <img src="assets/svg/icons8-javascript.svg" alt="JS">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>I have experience with JavaScript, which is a powerful programming language used for adding interactivity and dynamic functionality to web pages. This includes knowledge of JavaScript syntax, functions, and libraries such as jQuery.</p>
+                            </div>
+                        </div>
+                    </div> <!-- carousel-item -->
+                    <div class="carousel-item">
+                        <div class="detail">
+                            <img src="assets/svg/icons8-c++.svg" alt="C Standard">
+                            <div>
+                                <h3>C Standard</h3>
+                                <p>I'm still in the process of learning the skill, but I'm making progress and committed to mastering it.</p>
+                            </div>
+                        </div>
+                    </div> <!-- carousel-item -->
+                    <div class="carousel-item">
+                        <div class="detail">
+                            <img src="assets/svg/icons8-python.svg" alt="Python">
+                            <div>
+                                <h3>Python</h3>
+                                <p>I'm still in the process of learning the skill, but I'm making progress and committed to mastering it.</p>
+                            </div>
+                        </div>
+                    </div> <!-- carousel-item -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="projects">
+        <h2 style="text-align: center; margin-bottom: 4rem;">Projects</h2>
+    </section>
+
+
+
+    <section id="contact">
+        <h2 style="text-align: center; margin-bottom: 4rem;">Contact</h2>
+    </section>
+
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+         window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+
+
+</body>
+</html>
