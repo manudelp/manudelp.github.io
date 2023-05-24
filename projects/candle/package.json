@@ -1,0 +1,20 @@
+{
+  "name": "projectcandle",
+  "version": "1.0.0",
+  "description": "Proyecto Candle - Gulp, SASS y HTML",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "Candle"
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  }
+}
