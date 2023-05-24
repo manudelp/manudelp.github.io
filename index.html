@@ -126,104 +126,19 @@
                 <h3 class="skill__title">Python</h3>
             </div>
         </div>
-
-        <script>
-            const skills = document.querySelectorAll('.skill');
-
-            skills.forEach(skill => {
-            skill.addEventListener('mouseover', () => {
-                skill.querySelector('.skill__title').classList.add('animated', 'bounceIn');
-            });
-
-            skill.addEventListener('mouseout', () => {
-                skill.querySelector('.skill__title').classList.remove('animated', 'bounceIn');
-            });
-            });
-
-
-            const skillDetails = document.querySelector('.skill_details');
-
-            skills.forEach((skill, index) => {
-            skill.addEventListener('click', () => {
-                // Remove active class from all carousel items
-                document.querySelectorAll('.carousel-item').forEach(item => {
-                item.classList.remove('active');
-                });
-                
-                // Add active class to clicked carousel item
-                document.querySelectorAll('.carousel-item')[index].classList.add('active');
-
-                // Show the skill details section
-                skillDetails.style.display = 'block';
-            });
-            });
-
-            // Hide the skill details section when the user clicks outside of it
-            document.addEventListener('click', event => {
-            if (!event.target.closest('.skill_details') && skillDetails.style.display === 'block') {
-                skillDetails.style.display = 'none';
-            }
-            });
-
-        </script>
-
-        <div class="skill_details">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="detail">
-                            <img src="assets/svg/icons8-html-5.svg" alt="HTML5">
-                            <div>
-                                <h3>HTML5</h3>
-                                <p>With HTML5, I have the ability to structure and organize web content in a semantic and accessible way. This includes knowledge of HTML tags, attributes, and best practices for creating web pages that are both user-friendly and search engine optimized.</p>
-                            </div>
-                        </div>
-                    </div> <!-- carousel-item -->
-                    <div class="carousel-item">
-                        <div class="detail">
-                            <img src="assets/svg/icons8-css3.svg" alt="CSS">
-                            <div>
-                                <h3>CSS3</h3>
-                                <p>I am proficient in CSS3, which allows me to add style, layout, and visual design to web pages. This includes knowledge of CSS properties, selectors, and techniques for creating responsive and mobile-friendly websites.</p>
-                            </div>
-                        </div>
-                    </div> <!-- carousel-item -->
-                    <div class="carousel-item">
-                        <div class="detail">
-                            <img src="assets/svg/icons8-javascript.svg" alt="JS">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>I have experience with JavaScript, which is a powerful programming language used for adding interactivity and dynamic functionality to web pages. This includes knowledge of JavaScript syntax, functions, and libraries such as jQuery.</p>
-                            </div>
-                        </div>
-                    </div> <!-- carousel-item -->
-                    <div class="carousel-item">
-                        <div class="detail">
-                            <img src="assets/svg/icons8-c++.svg" alt="C Standard">
-                            <div>
-                                <h3>C Standard</h3>
-                                <p>I'm still in the process of learning the skill, but I'm making progress and committed to mastering it.</p>
-                            </div>
-                        </div>
-                    </div> <!-- carousel-item -->
-                    <div class="carousel-item">
-                        <div class="detail">
-                            <img src="assets/svg/icons8-python.svg" alt="Python">
-                            <div>
-                                <h3>Python</h3>
-                                <p>I'm still in the process of learning the skill, but I'm making progress and committed to mastering it.</p>
-                            </div>
-                        </div>
-                    </div> <!-- carousel-item -->
-                </div>
-            </div>
-        </div>
     </section>
 
 
 
     <section id="projects">
         <h2 style="text-align: center; margin-bottom: 4rem;">Projects</h2>
+        <div class="list">
+            <div class="list__project">
+                <p>
+                    <a href="/projects/projectCandle/index.html">Candle</a>
+                </p>
+            </div>
+        </div>
     </section>
 
 
