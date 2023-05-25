@@ -319,10 +319,13 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
     padding: 8rem 0;
     background-color: var(--color3);
     color: var(--color4);
+}
+
+#skills h2{
+    margin-bottom: 4rem;
 }
 
 .skills__info {
