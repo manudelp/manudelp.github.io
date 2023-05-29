@@ -330,7 +330,7 @@ table {
 
 .skills__info {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     transition: .15s;
 }
@@ -347,6 +347,7 @@ table {
 }
 
 .skill__title {
+    font-size: 2rem;
     opacity: 0;
     transition: .15s;
     transform: translateY(-4rem);
@@ -376,7 +377,14 @@ table {
     display: grid;
     place-items: center;
     padding: 8rem 0;
-    height: 100vh;
     background-color: var(--color4);
     color: var(--color2);
+}
+
+#projects .list {
+    margin: 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
