@@ -25,7 +25,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -131,7 +131,9 @@
                 <img src="assets/svg/icons8-node-js.svg" alt="NODE.JS">
                 <h3 class="skill__title">Node.js</h3>
             </div>
-            <div class="skill">
+        </div>
+        <!-- <div class="skills__info-learning">
+             <div class="skill">
                 <img src="assets/svg/icons8-c.png" alt="C">
                 <h3 class="skill__title">C Standard</h3>
             </div>
@@ -147,33 +149,13 @@
                 <img src="assets/svg/icons8-typescript.svg" alt="TypeScript">
                 <h3 class="skill__title">TypeScript</h3>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <section id="projects">
         <h2 style="text-align: center; margin-bottom: 4rem;">Projects</h2>
-        <div class="list">
-            <div class="list__project">
-                <a href="/candle/index.html">
-                    <img src="/assets/img/candle_logo.jpg" alt="Candle">
-                </a>
-            </div>
-            <div class="list__project">
-                <a href="/candle/index.html">
-                    <img src="/assets/img/candle_logo.jpg" alt="Candle">
-                </a>
-            </div>
-            <div class="list__project">
-                <a href="/candle/index.html">
-                    <img src="/assets/img/candle_logo.jpg" alt="Candle">
-                </a>
-            </div>
-            <div class="list__project">
-                <a href="/candle/index.html">
-                    <img src="/assets/img/candle_logo.jpg" alt="Candle">
-                </a>
-            </div>
-            <div class="list__project">
+        <div data-aos="fade" class="project-list">
+            <div class="project-list__project">
                 <a href="/candle/index.html">
                     <img src="/assets/img/candle_logo.jpg" alt="Candle">
                 </a>
@@ -184,9 +166,58 @@
 
 
     <section id="contact">
-        <h2 style="text-align: center; margin-bottom: 4rem;">Contact</h2>
+        <h2 style="text-align: center; margin-bottom: 4rem;">Get in touch</h2>
+
+        <form data-aos="fade-up" class="contact-form">
+            <div class="form-row">
+                <div>
+                    <label for="Ct_name">Your Name:</label>
+                    <input id="Ct_name" type="text" placeholder="John Doe">
+                </div>
+            
+                <div>
+                    <label for="Ct_email">E-mail:</label>
+                    <input id="Ct_email" type="email" placeholder="johndoe@email.com">
+                </div>
+            </div>
+        
+            <div class="form-textarea">
+                <label for="Ct_text">Message:</label>
+                <textarea id="Ct_text" cols="30" rows="5" placeholder="Enter your message here"></textarea>
+            </div>
+        
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
+
+    <footer class="footer">
+        <p>Connect with me:</p>
+
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://twitter.com/manudelp1"><img src="assets/svg/icons8-twitter-copy.svg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/manudlpn/"><img src="assets/svg/icons8-instagram-copy.svg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/manuel-delpino/"><img src="assets/svg/icons8-linkedin-copy.svg" alt="LinkedIn"></a>
+            </div>
+
+          <p class="copyright">
+            &copy; <span id="year"></span> Manuel Delpino. All rights reserved.
+          </p>
+
+          <p class="disclaimer">
+            Disclaimer: The content on this website is solely for informational purposes. Any views or opinions expressed are personal and do not represent those of any company or organization.
+          </p>
+          
+        </div>
+      </footer>
+      
+      <script>
+        // Get the current year and update the year in the footer dynamically
+        const currentYear = new Date().getFullYear();
+        document.getElementById("year").textContent = currentYear;
+      </script>
+      
 
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
