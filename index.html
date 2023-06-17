@@ -167,7 +167,7 @@
 
     <section id="contact">
         <h2 style="text-align: center; margin-bottom: 4rem;">Get in touch</h2>
-
+    
         <form action="contact_form.php" method="POST" data-aos="fade-up" class="contact-form">
             <input type="hidden" name="contact_number">
             <div class="form-row">
@@ -184,12 +184,13 @@
         
             <div class="form-textarea">
                 <label for="Ct_text">Message:</label>
-                <textarea id="Ct_text" cols="30" rows="5" placeholder="Enter your message here"></textarea>
+                <textarea id="Ct_text" name="user_message" cols="30" rows="5" placeholder="Enter your message here"></textarea>
             </div>
         
             <button type="submit">Submit</button>
         </form>
     </section>
+    
 
 
     <footer class="footer">
