@@ -4,7 +4,7 @@
     --color3: #0E8388;
     --color4: #CBE4DE;
 
-    --title: 'Alkatra', cursive;
+    --title: 'Montserrat', cursive;
     --text: 'Josefin Sans', sans-serif;
     --mono: 'Space Mono', mono;
 }
@@ -201,6 +201,7 @@ table {
 }
 
 .header__info h1 {
+    font-weight: 700;
     margin-bottom: 2rem;
 }
 
@@ -516,6 +517,7 @@ table {
 }
 
 .footer-social img{
+    max-width: 30px;
     transition: .15s;
 }
 
@@ -527,47 +529,4 @@ table {
     margin-top: 10px;
     font-size: 14px;
     color: #777;
-}
-
-@media screen and (max-width: 768px){
-    p {
-        font-size: 1.4rem;
-    }
-
-    .skills__info p {
-        text-align: justify;
-    }
-
-    .main-skills {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-
-    .other-skills {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 2rem;
-    }
-
-    .other-skills .skill__title {
-        position: initial;
-        font-size: 1.2rem;
-    }
-
-    .other-skills .skill {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .other-skills .skill__title {
-        transform: translateY(0rem);
-    }
-    
-    .other-skills .skill:hover .skill__title {
-        transform: translateY(0rem);
-    }
-
 }

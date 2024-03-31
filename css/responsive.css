@@ -1,5 +1,9 @@
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     /* GLOBALS */
+    p {
+        font-size: 1.4rem;
+    }
+
     h2 {
         font-size: 3.2rem;
     }
@@ -37,6 +41,43 @@
         transform: translateY(0);
         opacity: 1;
     }
+
+    .skills__info p {
+        text-align: justify;
+    }
+
+    .main-skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .other-skills {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+    }
+
+    .other-skills .skill__title {
+        position: initial;
+        font-size: 1.2rem;
+    }
+
+    .other-skills .skill {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .other-skills .skill__title {
+        transform: translateY(0rem);
+    }
+    
+    .other-skills .skill:hover .skill__title {
+        transform: translateY(0rem);
+    }
+
 
     /* PROJECTS */
 
