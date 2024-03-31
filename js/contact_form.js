@@ -1,9 +1,9 @@
-var form = getElementById('contactForm');
+var form = document.getElementById('contactForm');
 form.addEventListener('submit', function(event) {
     event.preventDefault();
-    var name = form.name.value;
-    var email = form.email.value;
-    var message = form.message.value;
+    var name = form.user_name.value;
+    var email = form.user_email.value;
+    var message = form.user_message.value;
     var data = {
         name: name,
         email: email,
