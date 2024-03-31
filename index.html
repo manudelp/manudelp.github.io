@@ -51,13 +51,17 @@
             <h4><span>HTML5</span> // <span>CSS3</span> // <span>JS</span></h4>
         </div>
         <div class="header__social animate__animated animate__fadeIn">
-            <a href="https://twitter.com/manudelp1"><img src="assets/svg/icons8-twitter.svg" alt="Twitter"></a>
-            <a href="https://www.instagram.com/manudlpn/"><img src="assets/svg/icons8-instagram.svg" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/manuel-delpino/"><img src="assets/svg/icons8-linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://twitter.com/manudelp1"><img src="assets/img/icons8-twitter.svg" alt="Twitter"></a>
+            <a href="https://github.com/manudelp"><img src="assets/img/icons8-github.svg" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/manuel-delpino/"><img src="assets/img/icons8-linkedin.svg" alt="LinkedIn"></a>
         </div>
 
         <a href="#main" class="scroll-down animate__animated animate__backInUp">
-            <img src="assets/svg/icons8-chevron-down-50.png" alt="scroll-down">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-down" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cbe4de" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 7l5 5l5 -5" />
+                <path d="M7 13l5 5l5 -5" />
+            </svg>
         </a>
 
     </header>
@@ -87,7 +91,7 @@
                         </div>
                         <div>
                             <p>Address</p>
-                            <p>Pilar, Buenos Aires.<br>1629</p>
+                            <p>Pilar, Buenos Aires.<br><span class="argentina">Argentina</span>.</p>
                         </div>
                     </div>
                 </div>
@@ -104,7 +108,7 @@
     </main>
 
     <section id="skills">
-        <h2 style="text-align: center;">Skills</h2>
+        <h2 style="text-align: center;">Hard skills</h2>
 
         <div class="skills__info contenedor" data-aos="fade-down">
             <p>Here are some of the skills I have developed during my academic and professional career. I am constantly learning and updating my knowledge to offer the best solutions in Front End design.</p>
@@ -337,7 +341,7 @@
     <section id="contact">
         <h2 style="text-align: center; margin-bottom: 4rem;">Get in touch</h2>
     
-        <form action="contact_form.php" method="POST" data-aos="fade-up" class="contact-form">
+        <form id="contactForm" method="POST" data-aos="fade-up" class="contact-form">
             <input type="hidden" name="contact_number">
             <div class="form-row">
                 <div>

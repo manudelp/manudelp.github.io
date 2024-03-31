@@ -225,10 +225,10 @@ table {
     gap: 1rem;
     justify-content: center;
     align-items: center;
-
 }
 
 .header__social a img {
+    width: 4rem;
     transition: .25s;
 }
 
@@ -236,13 +236,14 @@ table {
     scale: 1.2;
 }
 
-.scroll-down img{
+.scroll-down svg{
     opacity: .5;
     transition: .25s;
 }
 
-.scroll-down img:hover {
+.scroll-down svg:hover {
     opacity: 1;
+    scale: 1.2;
 }
 
 .animate__fadeIn, .animate__zoomIn {
@@ -295,6 +296,13 @@ table {
     text-align: justify;
 }
 
+.argentina {
+    cursor: default;
+    transition: .15s;
+}
+.argentina:hover {
+    background: radial-gradient(circle at center, #f6b506, white, white, #75aee0, #75aee0);
+}
 
 
 /* SKILLS */
