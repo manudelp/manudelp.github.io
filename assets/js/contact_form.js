@@ -4,25 +4,43 @@ form.addEventListener('submit', function(event) {
     var name = form.user_name.value;
     var email = form.user_email.value;
     var message = form.user_message.value;
+
     var data = {
-        name: name,
-        email: email,
-        message: message
-    };
-    console.log(data);
-    // Send by mail
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'send_mail.php', true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify(data));
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log(xhr.responseText);
-            var response = JSON.parse(xhr.responseText);
-            if (response.status === 'success') {
-                alert('Message sent successfully');
+        personalizations: [
+            {
+                to: [{ email: 'manudlpn0@gmail.com' }], // Change this to your recipient email address
+                subject: 'Message from ' + name
             }
-        }
+        ],
+        from: { email: 'manudlpn0@gmail.com' }, // Change this to your verified sender email address
+        content: [
+            {
+                type: 'text/plain',
+                value: `From: ${name}\nEmail: ${email}\n\n${message}`
+            }
+        ]
     };
-    form.reset();
+
+    fetch('https://api.sendgrid.com/v3/mail/send', {
+        method: 'POST',
+        headers: {
+            'Authorization': 'Bearer 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',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(function(response) {
+        if (response.ok) {
+            console.log('Email sent successfully');
+            alert('Message sent successfully');
+            form.reset();
+        } else {
+            console.error('Failed to send email');
+            alert('Failed to send message');
+        }
+    })
+    .catch(function(error) {
+        console.error('Error:', error);
+        alert('Failed to send message');
+    });
 });
