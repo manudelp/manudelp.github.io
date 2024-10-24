@@ -34,6 +34,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--color1);
 }
 
 h1, h2, h3, h4 {
@@ -379,7 +380,7 @@ table {
 
 /* JS */
 .skill__progress--js { mask-image: url(../assets/svg/js.svg); }
-.skill__progress--js .progress__bar { width: 60%; }
+.skill__progress--js .progress__bar { width: 70%; }
 
 /* THREE.JS */
 .skill__progress--threejs { mask-image: url(../assets/svg/threejs.svg); }
@@ -399,7 +400,7 @@ table {
 
 /* REACT */
 .skill__progress--react { mask-image: url(../assets/svg/react.svg); }
-.skill__progress--react .progress__bar { width: 30%; }
+.skill__progress--react .progress__bar { width: 50%; }
 
 
 .skill__title {
