@@ -22,7 +22,7 @@ export default function About({ language }: AboutProps) {
     es: {
       title: "Sobre mí",
       description: [
-        `¡Hola! Mi nombre es Manuel, soy estudiante de Ingeniería en Informática con experiencia Full Stack.
+        `¡Hola! Mi nombre es Manuel, soy estudiante de Ingeniería en Informática con experiencia en el desarrollo Frontend.
         Desde que empecé mi carrera, dediqué mi tiempo a desarrollar habilidades que me permitan destacar en este campo.
         Tomé diversos cursos enfocados en la creación de interfaces atractivas y funcionales, combinando creatividad y eficiencia.
         En mi portafolio vas a encontrar el resultado de esa pasión por el desarrollo web.`,
@@ -66,7 +66,7 @@ export default function About({ language }: AboutProps) {
     en: {
       title: "About Me",
       description: [
-        `Hi! I'm Manuel, a Computer Engineering student with experience in Full Stack.
+        `Hi! I'm Manuel, a Computer Engineering student with experience in Frontend development.
         Since the beginning of my career, I've dedicated my time to developing skills that allow me to stand out in this field.
         I've taken several courses focused on building attractive and functional interfaces, combining creativity and efficiency.
         In my portfolio, you'll find the result of that passion for web development.`,

@@ -9,7 +9,7 @@ export default function HeroSection({ language }: HeroProps) {
   const content = {
     es: {
       greeting: "Hola, soy Manuel 👋",
-      title: "Desarrollador Fullstack",
+      title: "Desarrollador Frontend",
       description:
         "Especializado en crear experiencias digitales escalables, intuitivas y centradas en el usuario. Utilizo tecnologías modernas como React, TypeScript y Node.js para construir productos robustos que combinan diseño y funcionalidad.",
       projects: "Ver proyectos",
@@ -18,7 +18,7 @@ export default function HeroSection({ language }: HeroProps) {
     },
     en: {
       greeting: "Hi, I'm Manuel 👋",
-      title: "Fullstack Developer",
+      title: "Frontend Developer",
       description:
         "Specialized in building scalable, intuitive, and user-centered digital experiences. I use modern technologies like React, TypeScript, and Node.js to create robust products that combine design and functionality.",
       projects: "View Projects",
